@@ -22,12 +22,6 @@ public class WorkMng : MonoBehaviour
         moneyT.text = money.ToString();
     }
 
-    public void SpendMoney(int m)
-    {
-        money -= m;
-        moneyT.text = money.ToString();
-    }
-
     public void AddHours(int h)
     {
         time += h*2;

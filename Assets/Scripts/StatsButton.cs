@@ -10,7 +10,7 @@ public class StatsButton : MonoBehaviour
 {
     
     
-    public bool Hp, St, Hg, Td, Money;
+    public bool Hp, St, Hg, Td, Money,Spend;
     public int Power=10;
     public Character Char;
     private WorkMng _workMng;
@@ -60,6 +60,11 @@ public class StatsButton : MonoBehaviour
             Char.SetStress(-Power);
             Char.SetHunger(-Power/2);
             Char.SetTired(-Power);
+        }
+
+        if (Spend)
+        {
+            _workMng.EarnMoney(Power-100);
         }
     }
 }

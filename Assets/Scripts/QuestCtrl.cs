@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class QuestCtrl : MonoBehaviour
 {
-    public GameObject lastChar;
+    
     public Character personData;
     public Image Char;
     public GameObject questPainel;
@@ -21,7 +21,6 @@ public class QuestCtrl : MonoBehaviour
         personData = _char;
         SetQuestData();
         questPainel.SetActive(true);
-        lastChar = _char.gameObject;
     }
 
     private void SetQuestData()
