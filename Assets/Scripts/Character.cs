@@ -7,7 +7,7 @@ namespace DefaultNamespace
     public class Character: MonoBehaviour, ICharacter
     {
         public bool Main;
-        public Image Char;
+        public int place;
         public Button questB;
         private QuestCtrl _questCtrl;
         [SerializeField] private int _hp;

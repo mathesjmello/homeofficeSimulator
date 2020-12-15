@@ -19,6 +19,10 @@ public class WorkMng : MonoBehaviour
     public void EarnMoney(int m)
     {
         money += m;
+        if (money<0)
+        {
+            money = 0;
+        }
         moneyT.text = money.ToString();
     }
 

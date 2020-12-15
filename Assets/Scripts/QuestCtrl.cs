@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class QuestCtrl : MonoBehaviour
 {
-    
+    public Sprite[] sprits;
     public Character personData;
     public Image Char;
     public GameObject questPainel;
@@ -29,7 +29,34 @@ public class QuestCtrl : MonoBehaviour
         _stSlider.fillAmount = personData.Stress/100f;
         _hgSlider.fillAmount = personData.Hunger/100f;
         _tdSlider.fillAmount = personData.Tired/100f;
-        //Char.sprite = personData.Char.sprite;
+        switch (personData.place)
+        {
+            case 0:
+                Char.sprite = sprits[0];
+                break;
+            case 1:
+                Char.sprite = sprits[1];
+                break;
+            case 2:
+                Char.sprite = sprits[2];
+                break;
+            case 3:
+                Char.sprite = sprits[3];
+                break;
+            case 4:
+                Char.sprite = sprits[4];
+                break;
+            case 5:
+                Char.sprite = sprits[5];
+                break;
+            case 6:
+                Char.sprite = sprits[6];
+                break;
+            case 7:
+                Char.sprite = sprits[7];
+                break;
+            
+        }
     }
 
     // Start is called before the first frame update
